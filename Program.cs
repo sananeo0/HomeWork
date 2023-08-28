@@ -4,16 +4,19 @@
     {
         static void Main(string[] args)
         {
-            int count = 1;           
-            string input = "CodeAcademy is a good place to study";
-            for (int i = 0; i < input.Length; i++)
-            {
-                if (input[i]==' ')
+            int count = 0;
+            string input = "CodeAcademy is a good place to study ";
+            string[] inputNew=input.Split(' ');
+
+             foreach (string s in inputNew)
+             {
+                if (!string.IsNullOrWhiteSpace(s))  
                 {
                     count++;
                 }
             }
-            Console.WriteLine("Total number of words in the string is: "+count);
+            Console.WriteLine(count);
+
         }
     }
 }
