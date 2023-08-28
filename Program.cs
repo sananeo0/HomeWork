@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             int count = 0;
-            string input = "CodeAcademy is a good place to study ";
+            string input = "CodeAcademy is a good place to study";
             string[] inputNew=input.Split(' ');
 
              foreach (string s in inputNew)
@@ -15,7 +15,7 @@
                     count++;
                 }
             }
-            Console.WriteLine(count);
+            Console.WriteLine(" Total number of words in the string is:"+count);
 
         }
     }
